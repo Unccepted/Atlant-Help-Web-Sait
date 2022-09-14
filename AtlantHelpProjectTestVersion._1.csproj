@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>AtlantHelpProjectTestVersion._1</RootNamespace>
+		<ScopedCssEnabled>true</ScopedCssEnabled>
+		<PlatformTarget>AnyCPU</PlatformTarget>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	  <Optimize>True</Optimize>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="Pages\Error.cshtml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Remove="Pages\Error.cshtml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="wwwroot\images" />
+		<None Include="wwwroot\images\logo-1.png" />
+		<None Include="wwwroot\images\mn-flag-1-2.png" />
+		<None Include="wwwroot\images\mn-flag-2.png" />
+		<None Include="wwwroot\images\mn-flag-3.png" />
+		<None Include="wwwroot\images\woodenManWithFlag-3.png" />
+	</ItemGroup>
+
+</Project>

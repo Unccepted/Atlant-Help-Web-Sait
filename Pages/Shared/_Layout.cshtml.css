@@ -1,0 +1,323 @@
+﻿
+nav {
+    margin: 0px 100px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 0px solid #2dc8cd;
+    box-shadow: 0 2px 2px 4px var(--light);
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+    nav ::deep a {
+        align-items: center;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: transparent 3px 1px 3px 3px, rgb(45 200 205) 0px 0px 3px;
+        color: var(--main-color);
+        display: flex;
+        font-family: buttonFont;
+        font-size: 20px;
+        font-weight: 600;
+        justify-content: center;
+        line-height: 1;
+        padding: 18px 20px;
+        text-align: center;
+        text-decoration: none;
+        white-space: nowrap;
+        border: 0;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        min-width: 145px;
+    }
+
+    nav ::deep img {
+        height: 20px;
+        margin: 0px 5px;
+    }
+
+
+
+    nav ::deep a:hover {
+        color: #FFDE1F;
+        text-decoration: none;
+        box-shadow: transparent 0 0 0 3px, #FFDE1F 0px 0px 3px 3px;
+        transition: box-shadow .2s, -webkit-box-shadow .2s;
+    }
+
+.mainDonationButton {
+    border: 0px;
+    border-radius: 4px;
+    box-shadow: #FF341F 0px 0px 3px;
+    background-color: #FF341F;
+    color: white;
+    font-family: buttonFont;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 18px 20px;
+    text-decoration: none;
+    transition: box-shadow 250ms,color 500ms;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    min-width: 145px;
+    outline: none;
+}
+
+    .mainDonationButton:hover {
+        color: #FF341F;
+        background-color: white;
+        box-shadow: #FF341F 0px 0px 5px;
+    }
+
+.leftNav {
+    order: 1;
+    margin-right: auto;
+}
+
+.centerNav {
+    order: 2;
+}
+
+.rightNav {
+    order: 3;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin: 0 50px;
+    }
+}
+
+@media (max-width:650px) {
+    .rightNav {
+        order: 2;
+    }
+
+    .centerNav, .mainDonationButton {
+        margin-top: 5px;
+        order: 3;
+        width: 100%;
+        flex-grow: 1;
+    }
+
+    .leftNav, .rightNav {
+        width: 45%;
+        flex-grow: 1;
+    }
+
+    .rightNav {
+        margin-left: 5px;
+    }
+
+    .leftNav {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    nav {
+        margin: 0 25px;
+    }
+
+        nav ::deep a, .mainDonationButton {
+            padding: 14px 15px;
+        }
+}
+
+@media (max-width: 400px) {
+    nav {
+        margin: 0px 5px;
+    }
+
+
+        nav ::deep a, .mainDonationButton {
+            font-size: 16px;
+            border-radius: 2px;
+            padding: 9px 10px;
+        }
+}
+/*! footer  */
+footer {
+    margin-top: 10px;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(45, 200, 205,0.9);
+    color: #fff;
+}
+
+    footer .allArea {
+        padding: 0px 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    footer h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    footer ul {
+        padding: 0;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+        footer ul span {
+            color: var(--text-color);
+            text-decoration: none;
+        }
+
+        footer ul ::deep #charity {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #FF341F;
+            text-shadow: 0px 1px 1px #ff341f;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+    footer .left {
+        text-align: left;
+    }
+
+    footer .iSocial {
+        text-align: right;
+    }
+
+        footer .iSocial a {
+            display: inline-block;
+            font-size: 24px;
+            width: 40px;
+            height: 42px;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin-left: 10px;
+            margin-top: 10px;
+            color: white;
+            border: 2px solid var(--main-color);
+            align-items: center;
+        }
+
+        footer .iSocial .icon {
+            text-decoration: none;
+            transition: color .1s ease-in-out, background-color .1s ease-in-out, border-color .1s ease-in-out;
+        }
+
+        footer .iSocial .fb {
+            color: #ffffff;
+            background-color: #3b5998;
+        }
+
+            footer .iSocial .fb:hover,
+            footer .iSocial .fb:active {
+                color: #3b5998;
+                background-color: white;
+            }
+
+        footer .iSocial .in {
+            color: white;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+        }
+
+            footer .iSocial .in:hover,
+            footer .iSocial .in:active {
+                background: -webkit-linear-gradient(#fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%),white;
+                -webkit-background-clip: text,border-box;
+                -webkit-text-fill-color: transparent;
+            }
+
+
+
+
+@media (max-width:768px) {
+    footer .allArea {
+        padding: 0px 50px;
+    }
+
+
+    footer .left {
+        text-align: left;
+        padding-bottom: 20px;
+    }
+
+    footer .iSocial {
+        text-align: right;
+    }
+}
+
+@media (max-width:650px) {
+
+    footer .allArea {
+        padding: 0px 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .left, footer .iSocial {
+        text-align: center;
+    }
+}
+
+footer .copyright {
+    margin-top: 14px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width:650px) {
+    footer .copyright {
+        font-size: 12px;
+    }
+}
+
+
+/*! End footer   */
+
+.divDonationButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dontationWays {
+    color: #FF341F;
+    background-color: white;
+    box-shadow: #FF341F 0px 0px 5px;
+    position: absolute;
+    top: 80px;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    border-radius: 4px;
+    transition: display 1s;
+}
+
+    .dontationWays p {
+        margin-bottom: 5px;
+    }
+
+@media (max-width:650px) {
+    .dontationWays {
+        top: 140px;
+    }
+}
+
+@media (max-width: 400px) {
+    .dontationWays {
+        top: 110px;
+    }
+}

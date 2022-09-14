@@ -1,0 +1,288 @@
+﻿.boxConteiner {
+    margin: 0px 100px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px 4px var(--gray);
+}
+
+/*Main  "AboutUs"*/
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 6px 4px var(--main-color);
+}
+
+h2 {
+}
+
+.leftPart {
+    padding: 10px 20px;
+    flex-direction: column;
+    order: 1;
+    width: 50%;
+    text-align: justify;
+}
+
+.rightPart {
+    background-image: url(/images/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    order: 2;
+    padding: 10px;
+}
+/*Middle part of "AboutUs"*/
+/*-----------------------------------------*/
+.goalFoundation {
+    margin: auto 200px;
+    margin-top: -20px;
+    /* height: 100%; */
+    box-shadow: 0px 0px 5px 2px var(--gray);
+    border-radius: 2px;
+    padding: 10px 20px;
+    background-image: url(/images/Freedom-1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+    .goalFoundation h3 {
+        text-shadow: 0px -2px 5px var(--gray);
+        color: var(--text-color);
+        font-weight: bold;
+        background-color: rgba(255,255,255,0.8);
+        padding: 5px 10px;
+        box-shadow: 0px 0px 4px 2px white;
+        border-radius: 4px;
+    }
+
+
+    .goalFoundation div {
+        color: var(--text-color);
+        background-color: rgba(255,255,255,0.8);
+        box-shadow: 0 0 20px 4px white;
+        border-radius: 4px;
+        padding: 10px;
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+/*Thirtg part of "AboutUs"*/
+/*-----------------------------------------*/
+.goalFoundationBottom {
+    margin: auto 300px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 4px 2px var(--gray);
+    border-radius: 2px;
+    background-color: white;
+    padding: 10px 50px;
+    text-align: justify;
+}
+/*Foundaters*/
+/*-----------------------------------------*/
+hr {
+    margin: 10px;
+    width: 90%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: white;
+}
+
+.OurFounders {
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 0px;
+    box-shadow: 0 0 20px 4px rgb(128, 128, 128,0.1);
+}
+
+.sectionBIO {
+    display: grid;
+    grid-auto-flow: column;
+    /*For colum amount in one row*/
+    /*grid-template-columns: repeat(8,1fr);*/
+}
+
+.founderBIO {
+    margin: 10px;
+}
+
+    .founderBIO .founderImg {
+        border-radius: 20px;
+        height: 120px;
+        box-shadow: 0 0 6px 2px var(--light);
+        margin-bottom: 10px;
+    }
+
+        .founderBIO .founderImg img {
+            max-height: 130px;
+            width: fit-content;
+            border-radius: 20px;
+        }
+
+.ourPartners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .ourPartners hr {
+        background: var(--text-color);
+    }
+
+.parner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+    .parner .partnerImg {
+        margin-bottom: 10px;
+        height: auto;
+        width: 120px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 0 4px 2px grey;
+    }
+
+        .parner .partnerImg img {
+            max-height: max-content;
+            width: 120px;
+            border-radius: 20px;
+        }
+
+.partnerReference {
+}
+
+    .partnerReference .reference {
+        font-size: 24px;
+        width: 100%;
+        text-align: center;
+        padding: 0px 10px;
+    }
+
+
+@media (max-width: 1024px) {
+    .mainContent {
+        margin: 0 100px;
+        margin-top: 20px;
+    }
+
+
+
+    .goalFoundation {
+        margin: auto 150px;
+        margin-top: -20px;
+    }
+
+    .goalFoundationBottom {
+        margin: auto 200px;
+        margin-bottom: 10px;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width:768px) {
+    .mainContent {
+        margin: 0 50px;
+        margin-top: 20px;
+    }
+
+
+
+    .goalFoundation {
+        margin: auto 75px;
+        margin-top: -20px;
+    }
+
+    .goalFoundationBottom {
+        margin: auto 100px;
+        margin-bottom: 10px;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width:600px) {
+    .mainContent {
+        flex-direction: column;
+    }
+
+    .leftPart {
+        order: 2;
+        width: 100%;
+    }
+
+    .rightPart {
+        order: 1;
+        width: 100%;
+        height: 320px;
+    }
+}
+
+@media (max-width:450px) {
+    .mainContent {
+        flex-direction: column;
+        margin: 0 25px;
+        margin-top: 20px;
+    }
+
+    .leftPart {
+        order: 2;
+        width: 100%;
+    }
+
+    .rightPart {
+        order: 1;
+        width: 100%;
+        height: 320px;
+    }
+
+    .goalFoundation {
+        margin: auto 50px;
+        margin-top: -20px;
+    }
+
+    .goalFoundationBottom {
+        margin: auto 75px;
+        margin-bottom: 10px;
+        margin-top: -20px;
+    }
+}
+
+@media (max-width:400px) {
+    .mainContent {
+        flex-direction: column;
+        margin: 0 5px;
+        margin-top: 20px;
+    }
+
+    .leftPart {
+        order: 2;
+        width: 100%;
+    }
+
+    .rightPart {
+        order: 1;
+        width: 100%;
+        height: 320px;
+    }
+
+    .goalFoundation {
+        margin: auto 15px;
+        margin-top: -20px;
+    }
+
+    .goalFoundationBottom {
+        margin: auto 25px;
+        margin-bottom: 10px;
+        margin-top: -20px;
+        padding: 10px 25px;
+    }
+}

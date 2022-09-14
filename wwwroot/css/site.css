@@ -1,0 +1,135 @@
+﻿:root {
+    --main-color: #2DC8CD;
+    --main-color-yellow: #FFDE1F;
+    --text-color: #3F5066;
+}
+
+@font-face {
+    font-family: buttonFont;
+    src: url(/fonts/Shadower.ttf);
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman';
+    font-size: 16px;
+    min-height: 100%;
+    background-image: url(/images/layered-waves-haikei-1.svg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    font-family: Impact;
+}
+
+.row {
+    margin: 0px;
+}
+
+.col {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    margin-top: 5px;
+}
+
+
+/* start main menu */
+
+body::-webkit-scrollbar {
+    width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1f93ff;
+    border: 1px black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: #121212;
+}
+
+
+#mainStructure {
+    color: var(--text-color);
+}
+
+/*For laters using*/
+/*<div class="smalImg"><img />2</div>
+			<div class="buttonCurrencies">
+			<button class="hrn"><span>₴</span><img /></button>
+			<button class="dol"><span>$</span><img /></button>
+			<button class="eur"><span>€</span><img /></button>
+			</div>*/
+.buttonCurrencies {
+    display: flex;
+    justify-content: center;
+}
+
+    .buttonCurrencies button {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 0px 10px;
+        padding: 0px;
+        width: auto;
+        height: auto;
+        color: white;
+        border: 1px solid var(--main-color);
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: bolder;
+        box-shadow: inset 0px 1px 0px var(--main-color), 0px 6px 0px #0F7C80;
+        outline: none;
+        text-decoration: none;
+        background-color: #6FD1D5;
+    }
+
+        .buttonCurrencies button span {
+            margin: 0px 10px;
+        }
+
+
+        .buttonCurrencies button:hover {
+            background-color: white;
+            color: var(--main-color);
+        }
+
+        .buttonCurrencies button:active {
+            top: 3px;
+            color: var(--main-color-yellow);
+            box-shadow: inset 0px 1px 0px var(--main-color), 0px 2px 0px 0px #0F7C80, 0px 3px 3px var(--main-color-yellow);
+        }
+
+
+    .buttonCurrencies img {
+        background-color: #6FD1D5;
+        width: 60px;
+        height: 28px;
+        border-radius: 0px 4px 4px 0px;
+        border-left: solid 2px #2ab7ec;
+    }
+
+    .buttonCurrencies .hrn img {
+        content: url(/images/mn-flag-1-2.png);
+    }
+
+    .buttonCurrencies .dol img {
+        content: url(/images/mn-flag-2.png);
+    }
+
+    .buttonCurrencies .eur img {
+        content: url(/images/mn-flag-3.png);
+    }

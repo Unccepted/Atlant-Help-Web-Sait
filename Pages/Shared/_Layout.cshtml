@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] </title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" />
+	<link rel="stylesheet" href="AtlantHelpProjectTestVersion._1.styles.css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://kit.fontawesome.com/3334b3bd90.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="leftNav"> <a asp-page="/Index"><img src="~/images/logo-1.png"> Атлант Хелп</a></div>
+			<div class="divDonationButton centerNav">
+				<button class="mainDonationButton"> Допомогти</button>
+
+				<div class="dontationWays" style="display: none;">
+					<p>Банк «ПУМБ»</p>
+					<p>IBAN: UA423348510000000026003182413</p>
+@*					<p>Картковий рахунок:</p>
+					<p>5351 3680 0020 8319</p>*@
+					<p>«КредоБанк»</p>
+					<p>IBAN: UA283253650000000260030039392</p>
+@*					<p>Картковий рахунок:</p>
+					<p>5351 3489 5091 6418</p>*@
+					<p>«ПриватБанк»</p>
+					<p>IBAN: UA563052990000026001030127847</p>
+@*					<p>Картковий рахунок:</p>
+					<p>4246 0010 0294 6329</p>*@
+				</div>
+			</div>
+			<div class="rightNav"> <a asp-page="/AboutUs"><img src="~/images/aboutUs-1.png">Про нас</a></div>
+		</nav>
+	</header>
+	<div id="mainStructure">
+		<main role="main">
+
+			@RenderBody()
+		</main>
+	</div>
+	<footer>
+		<div class="allArea">
+			<div class="left">
+				<h3>Контактна Інформація</h3>
+				<ul>
+					<li><strong>Номер Телефона:</strong><span> +38 (066) 54-81-127</span></li>
+					<li><strong>Ел.Пошта:</strong><span> atlanthelp.ua@gmail.com</span></li>
+					<li><strong>Розташування:</strong><span> м.Київ, проспект Миру 4, офіс 27</span></li>
+					<li><a id="charity" href="~/doc/CharityFoundationProff.pdf" target="_blank">ми не прибуткова організація</a></li>
+				</ul>
+			</div>
+			<div class="iSocial">
+				<h3>Наші соціальні мережі</h3>
+				<a href="https://www.facebook.com/atlanthelp.kiev.ua/" class="icon fb" target="_blank">	 <i class="fab fa-facebook-square"></i></a>
+				<a href="https://www.instagram.com/atlanthelp.kiev.ua_/" class="icon in" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<p class="copyright">АТЛАНТ ХЕЛП 2022</p>
+			</div>
+		</div>
+	</footer>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="~/js/site.js" asp-append-version="true"></script>
+	@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
