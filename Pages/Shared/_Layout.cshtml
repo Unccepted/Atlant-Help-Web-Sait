@@ -9,16 +9,19 @@
 	<link rel="stylesheet" href="~/css/site.css" />
 	<link rel="stylesheet" href="AtlantHelpProjectTestVersion._1.styles.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://kit.fontawesome.com/3334b3bd90.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
 </head>
 <body>
 	<header>
 		<nav>
 			<div class="leftNav"> <a asp-page="/Index"><img src="~/images/logo-1.png"> Атлант Хелп</a></div>
 			<div class="divDonationButton centerNav">
-				<button class="mainDonationButton"> Допомогти</button>
+				<button class="mainDonationButton"> <a asp-page="/Donation">Допомогти</a></button>
 
 				<div class="dontationWays" style="display: none;">
+					<h3>🇺🇦 Перекази по Україні</h3>
 					<p>Банк «ПУМБ»</p>
 					<p>IBAN: UA423348510000000026003182413</p>
 @*					<p>Картковий рахунок:</p>
@@ -31,6 +34,8 @@
 					<p>IBAN: UA563052990000026001030127847</p>
 @*					<p>Картковий рахунок:</p>
 					<p>4246 0010 0294 6329</p>*@
+					<h3>Допомогти в одник клік</h3>
+					<p>«ПриватБанк»</p>
 				</div>
 			</div>
 			<div class="rightNav"> <a asp-page="/AboutUs"><img src="~/images/aboutUs-1.png">Про нас</a></div>
@@ -55,8 +60,8 @@
 			</div>
 			<div class="iSocial">
 				<h3>Наші соціальні мережі</h3>
-				<a href="https://www.facebook.com/atlanthelp.kiev.ua/" class="icon fb" target="_blank">	 <i class="fab fa-facebook-square"></i></a>
-				<a href="https://www.instagram.com/atlanthelp.kiev.ua_/" class="icon in" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+				<a href="https://www.facebook.com/atlanthelp.kiev.ua/" class="icon fb" target="_blank">	<i class="bi bi-facebook"></i></a>
+				<a href="https://www.instagram.com/atlanthelp.kiev.ua_/" class="icon in" target="_blank"><i class="bi bi-instagram"></i></a>
 				<p class="copyright">АТЛАНТ ХЕЛП 2022</p>
 			</div>
 		</div>

@@ -1,6 +1,6 @@
-﻿// Please see documentation at 
+﻿// Please see documentation at
 
-$(document).ready(function () {
+/*$(document).ready(function () {
     $(".fondDirection button").click(function () {
         $(".donateInfo").slideDown(400, "swing");
     });
@@ -11,7 +11,7 @@ $(document).ready(function () {
         $(".dontationWays").slideToggle(400, "swing");
     });
 
-});
+});*/
 // change size of leftPart here , becuse i cant change it in css
 /*$(window).on("resize", resize);
 resize();*/
