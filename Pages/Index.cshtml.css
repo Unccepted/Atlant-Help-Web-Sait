@@ -50,7 +50,7 @@ h2 {
         text-align: justify;
     }
 
-        .mainContent .changingPart ::deep.leftPart {
+        .mainContent .changingPart ::deep .leftPart {
             width: 50%;
         }
 
@@ -102,33 +102,7 @@ h2 {
     background-color: var(--main-color);
 }
 
-.blockStyle {
-    margin: 0px 100px;
-    margin-top: 10px;
-    border-radius: 4px;
-    box-shadow: 0 0 4px 1px rgb(0 0 0 / 8%);
-}
 
-@media (max-width: 768px) {
-    .blockStyle {
-        margin: 0px 50px;
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 450px) {
-    .blockStyle {
-        margin: 0px 25px;
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    .blockStyle {
-        margin: 0px 5px;
-        margin-top: 10px;
-    }
-}
 /*Button donation*/
 /*-------------------------------------------------*/
 .fondDirection {

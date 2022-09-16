@@ -48,7 +48,9 @@ nav {
         transition: box-shadow .2s, -webkit-box-shadow .2s;
     }
 
-.mainDonationButton {
+
+
+::deep #mainDonationButton {
     border: 0px;
     border-radius: 4px;
     box-shadow: #FF341F 0px 0px 3px;
@@ -69,7 +71,7 @@ nav {
     outline: none;
 }
 
-    .mainDonationButton:hover {
+    ::deep #mainDonationButton:hover {
         color: #FF341F;
         background-color: white;
         box-shadow: #FF341F 0px 0px 5px;
@@ -100,7 +102,7 @@ nav {
         order: 2;
     }
 
-    .centerNav, .mainDonationButton {
+    .centerNav, ::deep #mainDonationButton {
         margin-top: 5px;
         order: 3;
         width: 100%;
@@ -126,7 +128,7 @@ nav {
         margin: 0 25px;
     }
 
-        nav ::deep a, .mainDonationButton {
+        nav ::deep a, ::deep #mainDonationButton {
             padding: 14px 15px;
         }
 }
@@ -137,7 +139,7 @@ nav {
     }
 
 
-        nav ::deep a, .mainDonationButton {
+        nav ::deep a, ::deep #mainDonationButton {
             font-size: 16px;
             border-radius: 2px;
             padding: 9px 10px;

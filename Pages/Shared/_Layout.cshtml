@@ -18,25 +18,7 @@
 		<nav>
 			<div class="leftNav"> <a asp-page="/Index"><img src="~/images/logo-1.png"> Атлант Хелп</a></div>
 			<div class="divDonationButton centerNav">
-				<button class="mainDonationButton"> <a asp-page="/Donation">Допомогти</a></button>
-
-				<div class="dontationWays" style="display: none;">
-					<h3>🇺🇦 Перекази по Україні</h3>
-					<p>Банк «ПУМБ»</p>
-					<p>IBAN: UA423348510000000026003182413</p>
-@*					<p>Картковий рахунок:</p>
-					<p>5351 3680 0020 8319</p>*@
-					<p>«КредоБанк»</p>
-					<p>IBAN: UA283253650000000260030039392</p>
-@*					<p>Картковий рахунок:</p>
-					<p>5351 3489 5091 6418</p>*@
-					<p>«ПриватБанк»</p>
-					<p>IBAN: UA563052990000026001030127847</p>
-@*					<p>Картковий рахунок:</p>
-					<p>4246 0010 0294 6329</p>*@
-					<h3>Допомогти в одник клік</h3>
-					<p>«ПриватБанк»</p>
-				</div>
+				<a id="mainDonationButton" asp-page="/Donation" > Допомогти  </a>
 			</div>
 			<div class="rightNav"> <a asp-page="/AboutUs"><img src="~/images/aboutUs-1.png">Про нас</a></div>
 		</nav>

@@ -30,19 +30,39 @@ h2 {
     font-family: Impact;
 }
 
-.row {
-    margin: 0px;
-}
-
-.col {
-    margin: 0;
-}
 
 header {
     width: 100%;
     margin-top: 5px;
 }
 
+.blockStyle {
+    margin: 0px 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 4px 1px rgb(0 0 0 / 8%);
+}
+
+@media (max-width: 768px) {
+    .blockStyle {
+        margin: 0px 50px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .blockStyle {
+        margin: 0px 25px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .blockStyle {
+        margin: 0px 5px;
+        margin-top: 10px;
+    }
+}
 
 /* start main menu */
 
