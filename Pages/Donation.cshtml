@@ -3,20 +3,25 @@
 @{
 	ViewData["Title"] = "Допомога Фонду";
 }
-<div id="mainInfo blockStyle">
-				<h3>🇺🇦 Перекази по Україні</h3>
-					<p>Банк «ПУМБ»</p>
-					<p>IBAN: UA423348510000000026003182413</p>
-@*					<p>Картковий рахунок:</p>
-					<p>5351 3680 0020 8319</p>*@
-					<p>«КредоБанк»</p>
-					<p>IBAN: UA283253650000000260030039392</p>
-@*					<p>Картковий рахунок:</p>
-					<p>5351 3489 5091 6418</p>*@
-					<p>«ПриватБанк»</p>
-					<p>IBAN: UA563052990000026001030127847</p>
-@*					<p>Картковий рахунок:</p>
-					<p>4246 0010 0294 6329</p>*@
-					<h3>Допомогти в одник клік</h3>
-					<p>«ПриватБанк»</p>
+<h3 id="topicName" class="text-center">🇺🇦 Перекази по Україні</h3>
+
+<div id="listLink">
+	<a class="donationLink" href="https://pb.ua/short?BFZ " target="_blank">ПриватБанк <i
+			class="bi bi-box-arrow-up-right"></i></a>
+</div>
+
+<div id="mainInfo" class="blockStyle">
+	<h3>Наші Реквізити</h3>
+	<p>БО «БФ «АТЛАНТ ХЕП»</p>
+	<p>ЄДРПОУ 44904917</p>
+	<p>Призначення платежу «Благодійна допомога»</p>
+	<p class="bankName">«ПриватБанк»</p>
+	<span>IBAN: UA563052990000026001030127847 </span><i class="bi bi-clipboard" onclick="copyToClipboard(this) "></i>
+	<p class="bankName">Банк «ПУМБ»</p>
+	<span>IBAN: UA423348510000000026003182413 </span><i class="bi bi-clipboard" onclick="copyToClipboard(this)"></i>
+	<p class=" bankName">«КредоБанк»</p>
+	<span>IBAN: UA283253650000000260030039392 </span><i class="bi bi-clipboard" onclick="copyToClipboard(this)"></i>
+	<p>Картковий рахунок:</p>
+	<p>5351 3489 5091 6418</p>
+
 </div>

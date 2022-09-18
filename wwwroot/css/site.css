@@ -84,6 +84,7 @@ body::-webkit-scrollbar-thumb {
 
 #mainStructure {
     color: var(--text-color);
+    margin-bottom: auto;
 }
 
 /*For laters using*/

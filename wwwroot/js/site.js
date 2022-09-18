@@ -1,30 +1,15 @@
-﻿// Please see documentation at
+﻿
+function copyToClipboard(icon) {
+    var someText = icon.previousSibling;
+    var copyText = someText.innerHTML.split(' ');
 
-/*$(document).ready(function () {
-    $(".fondDirection button").click(function () {
-        $(".donateInfo").slideDown(400, "swing");
+
+    navigator.clipboard.writeText(copyText[1]).then(() => {
+        /* Resolved - text copied to clipboard */
+        icon.className = "bi bi-clipboard-check";
+    }, () => {
+        /* Rejected - clipboard failed */
+        icon.className = "bi bi-clipboard-x";
     });
-    $(".closeForm").click(function () {
-        $(".donateInfo").slideUp(400, "swing");
-    });
-    $(".mainDonationButton").click(function () {
-        $(".dontationWays").slideToggle(400, "swing");
-    });
-
-});*/
-// change size of leftPart here , becuse i cant change it in css
-/*$(window).on("resize", resize);
-resize();*/
-
-/*function resize() {
-    if ($(window).width() < 768) {
-        $(".leftPart").css('width', '100%');
-    }
-
-    else {
-        $(".leftPart").css('width', '50%');
-    }
-
+    setTimeout(function () { icon.className = "bi bi-clipboard"; }, 2000);
 }
-*/
-

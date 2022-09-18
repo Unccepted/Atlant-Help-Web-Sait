@@ -1,0 +1,81 @@
+﻿#topicName {
+    margin-top: 10px;
+    color: white;
+    text-shadow: 0px 0px 10px rgb(126 126 126);
+    font-size: 5vh;
+}
+
+#listLink {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.donationLink {
+    border: 2px solid #6dc72e;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 1px rgb(0 0 0 / 60%);
+}
+
+.donationLink:hover {
+    text-decoration: none;
+}
+
+
+#mainInfo {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: fit-content;
+    text-align: justify;
+}
+
+#mainInfo * {
+    margin: 5px;
+}
+
+#mainInfo p {
+    opacity: 0.9;
+}
+
+#mainInfo h3 {
+    font-weight: bold;
+}
+
+#mainInfo i {
+    color: #FF341F;
+}
+
+#topicName {
+    color: white;
+    text-shadow: 0px 0px 0px white;
+
+}
+
+.bankName {
+    font-weight: bold;
+    opacity: 0.9;
+}
+
+
+@media (max-width: 450px) {
+    #topicName {
+        font-size: 4vh;
+    }
+
+}
+
+@media (max-width: 400px) {
+    #mainInfo {
+        font-size: 0.8rem;
+    }
+
+    #mainInfo h3 {
+        font-size: 1rem;
+
+    }
+
+}
