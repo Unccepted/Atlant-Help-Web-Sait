@@ -18,6 +18,17 @@
       "args": "${auto-detect-url}",
       "applicationUrl": "https://localhost:7254;http://localhost:5254",
       "dotnetRunMessages": true
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "launchBrowser": true,
+      "launchUrl": "https://localhost:7254",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "ASPNETCORE_Finished": "false",
+        "ASPNETCORE_URLS": "https://localhost:7254;http://localhost:5254"
+      },
+      "distributionName": ""
     }
   }
 }
