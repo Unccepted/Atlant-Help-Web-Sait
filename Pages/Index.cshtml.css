@@ -20,65 +20,69 @@ h2 {
     background-repeat: no-repeat;
 }
 
-    .mainContent h2 {
-        color: white;
-        text-shadow: 5px -1px 5px #2dc8cd;
-    }
+.mainContent h2 {
+    color: white;
+    text-shadow: 5px -1px 5px #2dc8cd;
+}
 
-    .mainContent .form {
-        display: flex;
-        flex-direction: column;
-        margin: 0px 100px;
-        border-radius: 8px 8px 0px 0px;
-    }
+.mainContent .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px;
+    border-radius: 8px 8px 0px 0px;
+}
 
-    .mainContent .donateInfo {
-        background-color: white;
-        padding-bottom: 10px;
-        width: auto;
-        min-height: 160px;
-        border: 2px solid white;
-        display: flex;
-        flex-direction: column;
-        box-shadow: inset 0px 0px 2px 1px grey, 0px 0px 2px 0px grey;
-    }
+.mainContent .donateInfo {
+    background-color: white;
+    padding-bottom: 10px;
+    width: auto;
+    min-height: 160px;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 2px 1px grey, 0px 0px 2px 0px grey;
+}
 
-    .mainContent .changingPart {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        text-align: justify;
-    }
+.mainContent .changingPart {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: justify;
+}
 
-        .mainContent .changingPart ::deep .leftPart {
-            width: 50%;
-        }
+.mainContent .changingPart ::deep .leftPart {
+    width: 50%;
+}
 
 .closeForm {
     margin: 10px auto 0px auto;
     color: white;
     background-color: var(--main-color);
-    border: 2px solid rgba(255,255,255,1);
+    border: 2px solid rgba(255, 255, 255, 1);
     outline: none;
     box-shadow: 0px 0px 2px 1px grey;
     padding: 5px 15px;
 }
 
 
-    .closeForm:hover {
-        color: var(--main-color);
-        background-color: white;
-        border: 2px solid var(--main-color);
+.closeForm:hover {
+    color: var(--main-color);
+    background-color: white;
+    border: 2px solid var(--main-color);
+}
+
+@media (max-width: 900px) {
+
+    .mainContent .changingPart ::deep.leftPart {
+        width: 100%;
     }
+}
 
 @media (max-width: 768px) {
     .mainContent .form {
         margin: 0 50px;
     }
 
-    .mainContent .changingPart ::deep.leftPart {
-        width: 100%;
-    }
 }
 
 @media (max-width: 450px) {
@@ -115,41 +119,41 @@ h2 {
     border-radius: 8px 8px 0 0;
 }
 
-    .fondDirection button {
-        flex-grow: 1;
-        cursor: pointer;
-        padding: 12px 18px;
-        border: 2px solid rgba(255,255,255,1);
-        color: white;
-        background-color: var(--main-color);
-        font-size: 16px;
-        text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2px;
-        transition: flex-grow 250ms;
-        outline: none;
-    }
+.fondDirection button {
+    flex-grow: 1;
+    cursor: pointer;
+    padding: 12px 18px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: white;
+    background-color: var(--main-color);
+    font-size: 16px;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px 2px;
+    transition: flex-grow 250ms;
+    outline: none;
+}
 
 
-    .fondDirection .btn-1 {
-        border-radius: 8px 0px 0px 0px;
-    }
+.fondDirection .btn-1 {
+    border-radius: 8px 0px 0px 0px;
+}
 
-    .fondDirection .btn-2 {
-        border-radius: 0px 8px 0px 0px;
-    }
+.fondDirection .btn-2 {
+    border-radius: 0px 8px 0px 0px;
+}
 
-    .fondDirection button:hover {
-        flex-grow: 2;
-        color: var(--main-color);
-        outline: none;
-        background-color: rgba(255,255,255,1);
-        border: 2px solid var(--main-color);
-    }
+.fondDirection button:hover {
+    flex-grow: 2;
+    color: var(--main-color);
+    outline: none;
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid var(--main-color);
+}
 
 
-    .fondDirection button:active {
-        transform: translateY(2px);
-        background-color: rgba(255,255,255,0.7);
-    }
+.fondDirection button:active {
+    transform: translateY(2px);
+    background-color: rgba(255, 255, 255, 0.7);
+}
 
 
 /*Midle Area*/
@@ -178,7 +182,7 @@ h2 {
     border-radius: 4px;
     box-shadow: 1px 1px 4px 2px grey;
     font-size: 14px;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 @media (max-width:768px) {
@@ -210,15 +214,15 @@ h2 {
     justify-items: center;
 }
 
-    #newsBlock h2 {
-        border-radius: 4px;
-        border: 1px solid white;
-        background: var(--main-color);
-        margin-bottom: 10px;
-        width: 100%;
-        color: white;
-        text-shadow: 2px 2px 2px grey;
-    }
+#newsBlock h2 {
+    border-radius: 4px;
+    border: 1px solid white;
+    background: var(--main-color);
+    margin-bottom: 10px;
+    width: 100%;
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
 
 .news {
     box-shadow: 0 0 10px 2px rgb(0 0 0 / 8%);
@@ -232,62 +236,62 @@ h2 {
     position: relative;
 }
 
-    #mainNews ::deep.firstImg {
-        width: 100%;
-        border-radius: 4px;
-    }
+#mainNews ::deep.firstImg {
+    width: 100%;
+    border-radius: 4px;
+}
 
-    #mainNews #mainNewsText {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        display: grid;
-        grid-auto-flow: column;
-        background: var(--main-color);
-        color: white;
-        font-size: large;
-        font-weight: bold;
-        margin-bottom: 10px;
-        text-align: justify;
-        align-items: center;
-        justify-items: start;
-    }
+#mainNews #mainNewsText {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    background: var(--main-color);
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: justify;
+    align-items: center;
+    justify-items: start;
+}
 
-        #mainNews #mainNewsText #text {
-            margin-bottom: 0px;
-            padding: 5px;
-            line-height: 5px;
-        }
+#mainNews #mainNewsText #text {
+    margin-bottom: 0px;
+    padding: 5px;
+    line-height: 5px;
+}
 
-        #mainNews #mainNewsText #date {
-            font-size: small;
-            grid-row-start: 2;
-            color: var(--text-color);
-            margin-bottom: 5px;
-            margin-left: 5px;
-        }
+#mainNews #mainNewsText #date {
+    font-size: small;
+    grid-row-start: 2;
+    color: var(--text-color);
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
 
 
-        #mainNews #mainNewsText a {
-            text-decoration: none;
-            background: white;
-            color: var(--main-color);
-            border-radius: 8px;
-            border: 1px solid var(--main-color);
-            margin: 10px;
-            padding: 5px 10px;
-            justify-self: center;
-        }
+#mainNews #mainNewsText a {
+    text-decoration: none;
+    background: white;
+    color: var(--main-color);
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+    margin: 10px;
+    padding: 5px 10px;
+    justify-self: center;
+}
 
-            #mainNews #mainNewsText a:hover {
-                background: var(--main-color);
-                color: white;
-                border-color: white;
-            }
+#mainNews #mainNewsText a:hover {
+    background: var(--main-color);
+    color: white;
+    border-color: white;
+}
 
-            #mainNews #mainNewsText a:active {
-                opacity: 0.7;
-            }
+#mainNews #mainNewsText a:active {
+    opacity: 0.7;
+}
 
 @media(max-width:1024px) {
     #mainNews {
@@ -298,13 +302,13 @@ h2 {
 
 
 
-        #mainNews #mainNewsText #text {
-            line-height: 0.8em;
-        }
+    #mainNews #mainNewsText #text {
+        line-height: 0.8em;
+    }
 
-        #mainNews #mainNewsText #date {
-            margin-bottom: 5px;
-        }
+    #mainNews #mainNewsText #date {
+        margin-bottom: 5px;
+    }
 }
 
 @media(max-width:768px) {

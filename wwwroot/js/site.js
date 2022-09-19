@@ -1,4 +1,16 @@
-﻿
+﻿$(document).ready(function () {
+    $(".fondDirection button").click(function () {
+        $(".donateInfo").slideDown(400, "swing");
+    });
+    $(".closeForm").click(function () {
+        $(".donateInfo").slideUp(400, "swing");
+    });
+    $(".mainDonationButton").click(function () {
+        $(".dontationWays").slideToggle(400, "swing");
+    });
+
+});
+
 function copyToClipboard(icon) {
     var someText = icon.previousSibling;
     var copyText = someText.innerHTML.split(' ');

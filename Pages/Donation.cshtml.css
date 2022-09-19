@@ -1,8 +1,18 @@
-﻿#topicName {
+﻿h3 {
+    font-size: 2rem;
+}
+
+#topicName {
     margin-top: 10px;
-    color: white;
-    text-shadow: 0px 0px 10px rgb(126 126 126);
-    font-size: 5vh;
+    color: var(--text-color);
+    /* text-shadow: 0px 0px 10px grey; */
+}
+
+@media (min-height:768px) {
+    #topicName {
+        color: white;
+        text-shadow: 0px 0px 10px grey;
+    }
 }
 
 #listLink {
@@ -11,14 +21,23 @@
     margin-top: 20px;
 }
 
+#listLink h3 {
+    color: white;
+    text-shadow: 0px 0px 10px grey;
+}
+
 .donationLink {
-    border: 2px solid #6dc72e;
+    border: 3px solid rgb(109 199 46);
+    outline: 1px solid rgb(0 0 0 / 10%);
     padding: 10px 20px;
     background-color: black;
     color: white;
     border-radius: 8px;
-    box-shadow: 0 0 20px 1px rgb(0 0 0 / 60%);
+    box-shadow: 0 0 20px 1px rgb(109 199 46 / 20%);
+    display: inline-block;
 }
+
+
 
 .donationLink:hover {
     text-decoration: none;
@@ -49,11 +68,6 @@
     color: #FF341F;
 }
 
-#topicName {
-    color: white;
-    text-shadow: 0px 0px 0px white;
-
-}
 
 .bankName {
     font-weight: bold;
