@@ -1,6 +1,6 @@
 # Atlant-Help-Web-Sait
 
-This project I had been creating thins 06.06.22 till 30.08.22.It was my first , true first, attemt to create website for charity foundation and prove my skills.
-Whene I start program , I`ve already have expirency in this topic. Previosly I created something similar to this, but I ended up on showing date from database in localhost.
-This time I push myself event further and publish my website in Internet using www.smarterasp.net. 
-Right now I want to recreate this website useing React.js and also recreate design.
+This project I had been creating thins 06.06.22 till 30.08.22. It was my first, truly first, attempt to create a website for a charity foundation and prove my skills.
+When I start to program, I already had experience in this topic. Previously I created something similar to this, but I ended up showing the data from the database in localhost.
+This time I push myself even further and publish my website on the Internet using www.smarterasp.net. 
+Right now I want to recreate this website using React.js and also recreate the design.
